@@ -1,0 +1,14 @@
+.header {
+
+    background-color: var(--header-bg-color);
+    border-bottom: 1px solid var(--line-color);
+
+    &__link {
+
+        @include transition (color, fill);
+
+        color: var(--accent-color);
+        fill: currentColor;
+        //transition: color, fill 2500s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
